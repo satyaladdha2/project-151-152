@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>          
+        <script src="car.js"></script>
+        <script src="base.js"></script>
+      </head>
+      
+      <body> 
+          <a-scene >
+           
+      <!-- PLANE BASE -->
+      <a-entity id="base" base></a-entity>
+      <!-- CAR MODEL -->
+      <a-entity id="car" car></a-entity>
+
+      <a-entity
+        camera
+        look-controls
+        wasd-controls
+        position="0 50 250"
+      ></a-entity> 
+
+      
+          </a-scene>
+      </body>
+</html>
+
